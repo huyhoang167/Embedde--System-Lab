@@ -1,4 +1,4 @@
-# Install script for directory: D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/main
+# Install script for directory: C:/Users/Hoang/Music/sample_project/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

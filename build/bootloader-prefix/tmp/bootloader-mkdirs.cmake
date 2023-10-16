@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "D:/Hoang/esp/esp-idf/components/bootloader/subproject"
-  "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader"
-  "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix"
-  "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix/tmp"
-  "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix/src"
-  "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/Hoang/Music/sample_project/build/bootloader"
+  "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix"
+  "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix/tmp"
+  "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix/src"
+  "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/Hoang/Music/sample_project/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

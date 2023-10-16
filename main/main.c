@@ -60,21 +60,21 @@ void Cyclic_Task (void* parameter)
     }
     vTaskDelete( NULL) ;
 }
-void Uncyclic_Task (void* parameter)
+void Acyclic_Task (void* parameter)
 {
     esp_rom_gpio_pad_select_gpio ( GPIO_NUM_17 ) ;
     gpio_set_direction ( GPIO_NUM_17 , GPIO_MODE_INPUT ) ;
     while(1)
     { 
-        if (button_is_hold == 1){
+        if (button_is_held == 1){
             printf("Button is being held\n");
-            vTaskDelay(200 / portTICK_PERIOD_MS);
         }
         else if (button_is_pressed == 1){
             button_is_pressed = 0;
             printf("ESP32\n");
-            vTaskDelay(200 / portTICK_PERIOD_MS);
+            
         }
+        vTaskDelay(200 / portTICK_PERIOD_MS);
     }
     vTaskDelete ( NULL ) ;
 }
@@ -88,5 +88,5 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_timer_create(&my_timer_args, &timer_handler));
     ESP_ERROR_CHECK(esp_timer_start_periodic(timer_handler, 10000));
     xTaskCreate(Cyclic_Task, "Task 1", 2048, NULL, 5, NULL);
-    xTaskCreate(Uncyclic_Task, "Task 2", 2048, NULL, 6, NULL);
+    xTaskCreate(Acyclic_Task, "Task 2", 2048, NULL, 6, NULL);
 }

@@ -1,4 +1,4 @@
-/* * Data converted from D:/VIDEOS/code_device/HSmartHome/Gateway/doc/ESP32/sample_project/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/Hoang/Music/sample_project/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
