@@ -1,5 +1,5 @@
 
-# Install ESP32-IDP on Visual Studio Code:
+# Install ESP32-IDF on Visual Studio Code:
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/).
 2. Open the **Extensions** view by clicking on the Extension icon in the Activity Bar on the side of Visual Studio Code or the **View: Extensions** command (shortcut: <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>X</kbd> or <kbd>Ctrl+Shift+X</kbd>.
