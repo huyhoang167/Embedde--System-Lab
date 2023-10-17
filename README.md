@@ -44,17 +44,3 @@
 <p>
   <img src="./image/install.png" alt="Select ESP-IDF" width="600">
 </p>
-
-# Build and Flash Project using ESP-IDF:
-After installing ESP-IDF extension, some icons will be showed at the bottom of VScode window.
-
-<p>
-  <img src="./image/Screenshot 2023-10-17 151651.png" alt="Select ESP-IDF" width="900">
-</p>
-
-To build your project, you have to follow some steps:
-   - Choose the serial port your device is connected
-   - Select an Espressif target (esp32)
-   - Build your project
-   - After successfully building project, selecting flash method (UART) and flashing to your device
-   - You can later start a monitor which will log the device activity in a Visual Studio Code terminal to see the result of your project.

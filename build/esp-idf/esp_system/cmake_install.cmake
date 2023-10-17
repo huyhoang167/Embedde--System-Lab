@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/main")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/hello_world")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Hoang/Music/sample_project/build/esp-idf/esp_system/port/cmake_install.cmake")
+  include("C:/Users/Hoang/Music/Lab1/hello_world/build/esp-idf/esp_system/port/cmake_install.cmake")
 endif()
 

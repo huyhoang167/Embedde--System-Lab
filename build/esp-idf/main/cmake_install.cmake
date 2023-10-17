@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Hoang/Music/sample_project/main
+# Install script for directory: C:/Users/Hoang/Music/Lab1/hello_world/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/main")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/hello_world")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
