@@ -8,7 +8,9 @@
 #include "esp_timer.h"
 #include "sdkconfig.h"
 #include <string.h>
+
 #define QUEUE_LENGTH 10
+
 struct Queue_data{
     int request_ID;
     char msg[30];
@@ -93,6 +95,7 @@ void Process_request(void *pvParameter){
                     }
                     else{
                         printf("Skipping this task with message: %s, because it's rejected %d times\n",Received_request->msg,Received_request->request_Reject_counter + 1);
+                        free(Received_request);
                     }
                 }
             }
