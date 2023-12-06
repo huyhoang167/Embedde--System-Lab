@@ -1,32 +1,60 @@
-# _Sample project_
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+# Install ESP32-IDF on Visual Studio Code:
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/).
+2. Open the **Extensions** view by clicking on the Extension icon in the Activity Bar on the side of Visual Studio Code or the **View: Extensions** command (shortcut: <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>X</kbd> or <kbd>Ctrl+Shift+X</kbd>.
+3. Search the extension with any related keyword like `espressif`, `esp-idf`, `esp32`, `esp32s2`, etc.
+4. Install the extension
+   
+<p>
+  <img src="./image/image.png" alt="Select ESP-IDF" width="500">
+</p>
 
+5. In Visual Studio Code, select menu "View" and "Command Palette" and type [configure esp-idf extension]. After, choose the **ESP-IDF: Configure ESP-IDF extension** option. You can also choose where to save settings in the setup wizard.
+ 
+<p>
+  <img src="./image/Screenshot (183).png" alt="Select ESP-IDF" width="400">
+</p>
 
+<p>
+  <img src="./image/Screenshot (184).png" alt="Select ESP-IDF" width="600">
+</p>
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+<p>
+  <img src="./image/Screenshot 2023-10-17 143059.png" alt="Select ESP-IDF" width="600">
+</p>
 
-## Example folder contents
+6. Choose **Express** for the fastest option
+7. If you choose **Express** setup mode:
+    - Pick an ESP-IDF version to download (or find ESP-IDF in your system) and the python executable to create the virtual environment.
+    - Choose the location for ESP-IDF Tools and python virtual environment (also known as `IDF_TOOLS_PATH`) which is `$HOME\.espressif` on MacOS/Linux and `%USERPROFILE%\.espressif` on Windows by default.
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
+<p>
+  <img src="./image/Screenshot 2023-10-17 143810.png" alt="Select ESP-IDF" width="600">
+</p>
 
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
+8. The user will see a page showing the setup progress status showing ESP-IDF download progress, ESP-IDF Tools download and install progress as well as the creation of a python virtual environment.
 
-Below is short explanation of remaining files in the project folder.
+<p>
+  <img src="./image/install-status.png" alt="Select ESP-IDF" width="600">
+</p>
 
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+9. If everything is installed correctly, the user will see a message that all settings have been configured. You can start using the extension.
+
+<p>
+  <img src="./image/install.png" alt="Select ESP-IDF" width="600">
+</p>
+
+# Build and Flash Project using ESP-IDF:
+After installing ESP-IDF extension, some icons will be showed at the bottom of VScode window.
+
+<p>
+  <img src="./image/Screenshot 2023-10-17 151651.png" alt="Select ESP-IDF" width="900">
+</p>
+
+To build your project, you have to follow some steps:
+   - Choose the serial port your device is connected
+   - Select an Espressif target (esp32)
+   - Build your project
+   - After successfully building project, selecting flash method (UART) and flashing to your device
+   - You can later start a monitor which will log the device activity in a Visual Studio Code terminal to see the result of your project.
