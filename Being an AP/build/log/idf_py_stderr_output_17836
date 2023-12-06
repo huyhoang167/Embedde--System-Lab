@@ -1,0 +1,17 @@
+Compiler supported targets: xtensa-esp32-elf
+
+CMake Error at D:/Hoang/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/ExternalProject.cmake:3131 (configure_file):
+  No such file or directory
+Call Stack (most recent call first):
+  D:/Hoang/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/ExternalProject.cmake:4167 (_ep_add_download_command)
+  D:/Hoang/esp/esp-idf/components/bootloader/project_include.cmake:127 (externalproject_add)
+  D:/Hoang/esp/esp-idf/tools/cmake/build.cmake:398 (include)
+  D:/Hoang/esp/esp-idf/tools/cmake/build.cmake:620 (__build_process_project_includes)
+  D:/Hoang/esp/esp-idf/tools/cmake/project.cmake:547 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+CMake Error at D:/Hoang/esp/esp-idf/CMakeLists.txt:234 (message):
+  Failed to determine sizeof(time_t)
+
+
