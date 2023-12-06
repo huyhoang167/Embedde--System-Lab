@@ -937,3 +937,13 @@
 61	349	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader/bootloader.elf	e3f43d2056e4d491
 61	349	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader/bootloader.bin	e3f43d2056e4d491
 61	349	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader/bootloader.map	e3f43d2056e4d491
+74	246	0	esp-idf/esptool_py/CMakeFiles/app_check_size	84a85bc0924bad06
+74	246	0	C:/Users/Hoang/Videos/Lab6.1/project-name/build/esp-idf/esptool_py/CMakeFiles/app_check_size	84a85bc0924bad06
+65	352	7235526987456348	bootloader-prefix/src/bootloader-stamp/bootloader-build	e3f43d2056e4d491
+65	352	7235526987456348	bootloader/bootloader.elf	e3f43d2056e4d491
+65	352	7235526987456348	bootloader/bootloader.bin	e3f43d2056e4d491
+65	352	7235526987456348	bootloader/bootloader.map	e3f43d2056e4d491
+65	352	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	e3f43d2056e4d491
+65	352	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader/bootloader.elf	e3f43d2056e4d491
+65	352	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader/bootloader.bin	e3f43d2056e4d491
+65	352	7235526987456348	C:/Users/Hoang/Videos/Lab6.1/project-name/build/bootloader/bootloader.map	e3f43d2056e4d491
